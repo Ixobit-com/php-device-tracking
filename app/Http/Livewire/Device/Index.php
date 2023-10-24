@@ -10,7 +10,6 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Livewire\Component;
 use Livewire\WithPagination;
-use Rap2hpoutre\FastExcel\FastExcel;
 
 class Index extends Component
 {
@@ -59,11 +58,5 @@ class Index extends Component
             'types' => Device::TYPES,
             'statuses' => Device::STATUSES,
         ]);
-    }
-
-    public function test()
-    {
-        $zxc = new FastExcel();
-        \fastexcel();
     }
 }
