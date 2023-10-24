@@ -6,6 +6,7 @@
 - [Proposed Solution](#proposed-solution)
 - [Access Levels](#access-levels)
 - [Installation](#installation)
+- [System Requirements](#system-requirements)
 
 ## Background and Problem Statement
 
@@ -38,3 +39,25 @@ The proposed solution is to provide all interested employees with a centralized 
 3. Execute `php artisan storage:link`.
 4. Set up the environment in the `.env` file.
 5. Run `php artisan migrate --seed`.
+
+## System requirements
+
+1. PHP:
+- Version: 8.1 or higher
+- Required PHP Extensions:
+  - intl
+  - opcache
+  - pdo_mysql
+  - gd
+  - bcmath
+  - zip
+  - soap
+  - sockets
+  - exif
+2. MySQL:
+- Version: 8.0
+3. Nginx:
+- Version: 1.23.1
+4. Node.js and npm:
+- Node.js Version: 18.17.1
+- npm Version: 10.2.1
